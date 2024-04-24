@@ -389,17 +389,24 @@ Challenge yourself with numArgs. This function should return the count of argume
 Complete the exercise in the space below:
 */
 
-//* MY ANSWER - using ...args
+//* MY ANSWER - using (...args)
 
-function numArgs(...args) {
-    let numberOfParameters = 0
-    for(let i = args.length; i > 0; i--) {
-        numberOfParameters += 1
-    }
-    return numberOfParameters
-}
+// function numArgs(...args) {
+//     let numberOfParameters = 0
+//     for(let i = args.length; i > 0; i--) {
+//         numberOfParameters += 1
+//     }
+//     return numberOfParameters
+// }
 
 
 console.log('Exercise 14 Result:', numArgs(1, 2, 3, 4, 5));
 
+
+
+//* JOE'S FOLLOW UP ANSWER
+
+function numArgs(...args) {
+    return `${args.length}`
+}
 
