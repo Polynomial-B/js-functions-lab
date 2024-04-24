@@ -10,15 +10,15 @@ Exercise 1 has been completed for you:
 
 //* ANSWER
 
-// const maxOfTwoNumbers = (x, y) => {
-//     if (x >= y) {
-//       return x;
-//     } else {
-//       return y;
-//     }
-//   }
+const maxOfTwoNumbers = (x, y) => {
+    if (x >= y) {
+      return x;
+    } else {
+      return y;
+    }
+  }
   
-//   console.log('Exercise 1 Result:', maxOfTwoNumbers(3, 9));
+  console.log('Exercise 1 Result:', maxOfTwoNumbers(3, 9));
   
 
 
@@ -35,17 +35,17 @@ Example: isAdult(21) should return 'Adult'.
 Complete the exercise in the space below:
 */
 
-//* ANSWER
+//* MY ANSWER
 
-// function isAdult(age) {
-//     if(age >= 18) {
-//         return true
-//     } else {
-//         return false
-//     }
-// }
+function isAdult(age) {
+    if(age >= 18) {
+        return true
+    } else {
+        return false
+    }
+}
 
-// console.log('Exercise 2 Result:', isAdult(21));
+console.log('Exercise 2 Result:', isAdult(21));
 
 
 //? EXERCISE 3
@@ -61,25 +61,26 @@ Complete the exercise in the space below:
 
 //* ANSWER
 
-// function isCharAVowel(character) {
-//     if(character === ("a" || "e" || "i" || "o" || "u")) {
-//         return true
-//     } else {
-//         return false
-//     }
-// }
+function isCharAVowel(character) {
+    if(character === ("a" || "e" || "i" || "o" || "u")) {
+        return true
+    } else {
+        return false
+    }
+}
 
-// console.log('Exercise 3 Result:', isCharAVowel("a"));
+console.log('Exercise 3 Result:', isCharAVowel("a"));
+
 
 
 //* ALTERNATIVE ANSWER using INCLUDES
 
-function isCharAVowel(char) {
-    const vowels = "aeiouAEIOU"
-    return vowels.includes(char)
-}
+// function isCharAVowel(char) {
+//     const vowels = "aeiouAEIOU"
+//     return vowels.includes(char)
+// }
 
-console.log('Exercise 3 Result:', isCharAVowel("a"));
+// console.log('Exercise 3 Result:', isCharAVowel("a"));
 
 
 
@@ -94,13 +95,13 @@ Example: generateEmail('johnsmith', 'example.com') should return 'johnsmith@exam
 Complete the exercise in the space below:
 */
 
-//* ANSWER
+//* MY ANSWER
 
-// function generateEmail(name, domain) {
-//     return `${name}@${domain}`
-// }
+function generateEmail(name, domain) {
+    return `${name}@${domain}`
+}
 
-// console.log('Exercise 4 Result:', generateEmail("johnsmith", "example.com"));
+console.log('Exercise 4 Result:', generateEmail("johnsmith", "example.com"));
 
 
 //? EXERCISE 5
@@ -115,13 +116,13 @@ Example: greetUser('Sam', 'morning') should return "Good morning, Sam!"
 Complete the exercise in the space below:
 */
 
-//* ANSWER
+//* MY ANSWER
 
-// function greetUser(name, timeOfDay) {
-//     return `Good ${timeOfDay}, ${name}!`
-// }
+function greetUser(name, timeOfDay) {
+    return `Good ${timeOfDay}, ${name}!`
+}
 
-// console.log('Exercise 5 Result:', greetUser("Sam", "morning"));
+console.log('Exercise 5 Result:', greetUser("Sam", "morning"));
 
 
 //? EXERCISE 6
@@ -137,17 +138,17 @@ Example: reverseString('rockstar') should return the string "ratskcor".
 Complete the exercise in the space below:
 */
 
-//* ANSWER - starting at end of string
+//* MY ANSWER - starting at end of string
 
-// function reverseString(string) {
-//     let newString = ""
-//     for(let i = string.length - 1; i >= 0; i--) {
-//         newString += string[i] // newString = newString + string[i] -- string.charAt - alternative for [0]
-//     }
-//     return newString
-// }
+function reverseString(string) {
+    let newString = ""
+    for(let i = string.length - 1; i >= 0; i--) {
+        newString += string[i] // newString = newString + string[i] -- string.charAt - alternative for [0]
+    }
+    return newString
+}
 
-// console.log('Exercise 6 Result:', reverseString("rockstar"));
+console.log('Exercise 6 Result:', reverseString("rockstar"));
 
 
 //* ANSWER - starting at beginning of string
@@ -176,17 +177,19 @@ Example: checkPalindrome('taco') should return false.
 Complete the exercise in the space below:
 */
 
-//* ANSWER from Nick
+//* MY ANSWER
 
-// function checkPalindrome(isPalindrome) {
-//     let palOne = ""
-//     for(let i = isPalindrome.length - 1; i >= 0; i--) {
-//         palOne += isPalindrome[i] // newString = newString + string[i]
-//     }
-//     return palOne === isPalindrome
-// }
+function checkPalindrome(isPalindrome) {
+    let palOne = ""
+    for(let i = isPalindrome.length - 1; i >= 0; i--) {
+        palOne += isPalindrome[i] // newString = newString + string[i]
+    }
+    return palOne === isPalindrome
+}
 
-// console.log('Exercise 7 Result:', checkPalindrome("radar"));
+console.log('Exercise 7 Result:', checkPalindrome("radar"));
+
+
 
 //* ANSWER from Nick
 
@@ -208,28 +211,26 @@ Example: maxOfThree(17, 4, 9) should return 17.
 Complete the exercise in the space below:
 */
 
-//* ANSWER
+//* MY ANSWER
 
-// function maxOfThree(num1, num2, num3) {
-//     numArray = [num1, num2, num3]
-//     maxNum = 0
-//     let i = 0
-//     while (i < numArray.length-1) {
-//         if(numArray[i] > maxNum)
-//         maxNum = numArray[i]
-//         i++
-//     }
-//     return maxNum
-// }
+function maxOfThree(num1, num2, num3) {
+    numArray = [num1, num2, num3]
+    maxNum = 0
+    let i = 0
+    while (i < numArray.length-1) {
+        if(numArray[i] > maxNum)
+        maxNum = numArray[i]
+        i++
+    }
+    return maxNum
+}
 
-// console.log('Exercise 8 Result:', maxOfThree(5, 10, 8));
+console.log('Exercise 8 Result:', maxOfThree(5, 10, 8));
+
 
 //* ALTERNATIVE ANSWER
 
 // ! return Math.max()
-
-// console.log('Exercise 8 Result:', maxOfThree(5, 10, 8));
-
 
 
 
@@ -246,13 +247,13 @@ Example: calculateTip(50, 20) should return 10.
 Complete the exercise in the space below:
 */
 
-//* ANSWER
+//* MY ANSWER
 
-// function calculateTip(billAmount, tipPercentage) {
-//     return Math.round(((billAmount*tipPercentage)/100))
-// }
+function calculateTip(billAmount, tipPercentage) {
+    return Math.round(((billAmount*tipPercentage)/100))
+}
 
-// console.log('Exercise 9 Result:', calculateTip(50, 20));
+console.log('Exercise 9 Result:', calculateTip(50, 20));
 
 
 //? EXERCISE 10
@@ -268,20 +269,20 @@ Example: convertTemperature(32, 'F') should return 0 (Celsius).
 Complete the exercise in the space below:
 */
 
-//* ANSWER
+//* MY ANSWER
 
-// function convertTemperature(temp, convertTo) {
-//     let convertedTemp = 0
-//     if(convertTo === "C") {
-//         return (temp * 1.8) + 32
-//     } else if (convertTo === "F") {
-//         return (temp - 32) / 1.8
-//     } else if (convertTo !== "C" || convertTo !== "F") {
-//         console.log("please enter valid input: either C or F")
-//     }
-// }
+function convertTemperature(temp, convertTo) {
+    let convertedTemp = 0
+    if(convertTo === "C") {
+        return (temp * 1.8) + 32
+    } else if (convertTo === "F") {
+        return (temp - 32) / 1.8
+    } else if (convertTo !== "C" || convertTo !== "F") {
+        console.log("please enter valid input: either C or F")
+    }
+}
 
-// console.log('Exercise 10 Result:', convertTemperature(32, "C"));
+console.log('Exercise 10 Result:', convertTemperature(32, "C"));
 
 
 //? EXERCISE 11
@@ -297,24 +298,24 @@ Example: basicCalculator(10, 5, 'subtract') should return 5.
 Complete the exercise in the space below:
 */
 
-//* ANSWER
+//* MY ANSWER
 
-// function basicCalculator(operand1, operand2, operator) {
-//     if(operator === "add") {
-//         return operand1 + operand2
-//     } else if(operator === "subtract") {
-//         return operand1 - operand2
-//     } else if(operator === "multiply") {
-//         return operand1 * operand2
-//     } else if(operator === "divide") {
-//         return operand1 / operand2
-//     } else {
-//         console.log("Invalid input: please try again")
-//     }
-// }
+function basicCalculator(operand1, operand2, operator) {
+    if(operator === "add") {
+        return operand1 + operand2
+    } else if(operator === "subtract") {
+        return operand1 - operand2
+    } else if(operator === "multiply") {
+        return operand1 * operand2
+    } else if(operator === "divide") {
+        return operand1 / operand2
+    } else {
+        console.log("Invalid input: please try again")
+    }
+}
 
 
-// console.log('Exercise 11 Result:', basicCalculator(42, 5, "subract"));
+console.log('Exercise 11 Result:', basicCalculator(42, 5, "subract"));
 
 
 
@@ -330,26 +331,26 @@ Example: calculateGrade(100) should return A.
 Complete the exercise in the space below:
 */
 
-//* ANSWER
+//* MY ANSWER
 
-// function calculateGrade(score) {
-//     if(score >= 90) {
-//         return "A"
-//     } else if(score >= 80) {
-//         return "B"
-//     } else if(score >= 70) {
-//         return "C"
-//     } else if(score >= 60) {
-//         return "D"
-//     } else if(score <60 && score >= 0) {
-//         return "F"
-//     } else {
-//         console.log("Please input valid number")
-//     }
-// }
+function calculateGrade(score) {
+    if(score >= 90) {
+        return "A"
+    } else if(score >= 80) {
+        return "B"
+    } else if(score >= 70) {
+        return "C"
+    } else if(score >= 60) {
+        return "D"
+    } else if(score <60 && score >= 0) {
+        return "F"
+    } else {
+        console.log("Please input valid number")
+    }
+}
 
 
-// console.log('Exercise 12 Result:', calculateGrade(-6));
+console.log('Exercise 12 Result:', calculateGrade(-6));
 
 
 //? EXERCISE 13
@@ -366,15 +367,15 @@ Example: createUsername('Samantha', 'Green') should return 'SamGre12'.
 Complete the exercise in the space below:
 */
 
-//* ANSWER - using .slice and .length
+//* MY ANSWER - using .slice and .length
 
-// function createUsername(firstName, lastName) {
-//     let firstLast = firstName + lastName
-//     return ((firstName.slice(0, 3)) + (lastName.slice(0, 3))) +  firstLast.length
-// }
+function createUsername(firstName, lastName) {
+    let firstLast = firstName + lastName
+    return ((firstName.slice(0, 3)) + (lastName.slice(0, 3))) +  firstLast.length
+}
 
 
-// console.log('Exercise 13 Result:', createUsername("Samantha", "Green"));
+console.log('Exercise 13 Result:', createUsername("Samantha", "Green"));
 
 
 
@@ -388,17 +389,17 @@ Challenge yourself with numArgs. This function should return the count of argume
 Complete the exercise in the space below:
 */
 
-//* ANSWER - using ...args
+//* MY ANSWER - using ...args
 
-// function numArgs(...args) {
-//     let numberOfParameters = 0
-//     for(let i = args.length; i > 0; i--) {
-//         numberOfParameters += 1
-//     }
-//     return numberOfParameters
-// }
+function numArgs(...args) {
+    let numberOfParameters = 0
+    for(let i = args.length; i > 0; i--) {
+        numberOfParameters += 1
+    }
+    return numberOfParameters
+}
 
 
-// console.log('Exercise 14 Result:', numArgs(1, 2, 3, 4, 5));
+console.log('Exercise 14 Result:', numArgs(1, 2, 3, 4, 5));
 
 
